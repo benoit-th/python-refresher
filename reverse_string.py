@@ -1,9 +1,9 @@
 def reverse_string(text):
-    reversed = ""
+    result = ""
     for ch in text:
-        reversed = ch + reversed
+        result = ch + result
 
-    return reversed
+    return result
 
 assert reverse_string("") == ""
 assert reverse_string("Odoo") == "oodO"
