@@ -1,5 +1,4 @@
 def word_count(text):
-    # count = {word, count.get(count += 1, 1) for word in text}
     count = {}
     for word in text.lower().split():
         count[word] = count.get(word, 0) + 1
