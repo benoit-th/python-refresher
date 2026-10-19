@@ -1,12 +1,12 @@
-# For this exercise : The set is not a good idea because this is not an ordered type of data, so I will lose the order it has been given to me.
+# list(set(items)) doesn't work: a set is unordered, so the original order is lost.
 
 def remove_duplicates(items):
     unique = []
-    items_set = set()
+    seen = set()
     for item in items:
-        if item not in items_set:
+        if item not in seen:
             unique.append(item)
-            items_set.add(item)
+            seen.add(item)
 
     return unique
 
